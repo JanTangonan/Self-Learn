@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import App from './components/App';
+import TicTacToe from './components/TicTacToe';
 import reportWebVitals from './reportWebVitals';
 import Calculator from './components/Calculator';
+import Array from './components/Array';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <TicTacToe />
     <Calculator />
+    <Array />
   </React.StrictMode>
 );
 

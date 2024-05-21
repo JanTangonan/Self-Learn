@@ -1,4 +1,4 @@
-import '../styles/app.css';
+import '../styles/tictactoe.css';
 
 import { useState } from 'react';
 
@@ -85,9 +85,11 @@ export default function Game() {
   });
 
   return (
-    <div className="game">
+    <div className="game-container">
+      <div className="game">
       <div className="game-board">
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+          <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+        </div>
       </div>
       <div className="game-info">
         <ol>{moves}</ol>
