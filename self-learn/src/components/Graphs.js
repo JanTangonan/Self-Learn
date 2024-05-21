@@ -10,4 +10,11 @@ export default function Graph(){
       let node1 = new Node(1);
       let node2 = new Node(2);
       node1.neighbors.push(node2);
+      
+
+    return(
+        <div>
+            <h1>Hello</h1>
+        </div>
+    )
 }
