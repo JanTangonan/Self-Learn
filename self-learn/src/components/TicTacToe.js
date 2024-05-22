@@ -1,4 +1,5 @@
 import '../styles/tictactoe.css';
+import { Button, ButtonGroup, Center, Heading } from '@chakra-ui/react'
 
 import { useState } from 'react';
 
@@ -34,7 +35,9 @@ function Board({ xIsNext, squares, onPlay }) {
 
   return (
     <>
-      <div className="status">{status}</div>
+      <div className="status">
+        <Center><Heading>{status}</Heading></Center>
+      </div>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
@@ -79,7 +82,7 @@ export default function Game() {
     }
     return (
       <li key={move}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+        <Button className="moves" onClick={() => jumpTo(move)}>{description}</Button>
       </li>
     );
   });
@@ -87,13 +90,14 @@ export default function Game() {
   return (
     <div className="game-container">
       <div className="game">
-      <div className="game-board">
+        <div className="game-board">
           <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
         </div>
+        <div className="game-info">
+          <ol>{moves}</ol>
+        </div>
       </div>
-      <div className="game-info">
-        <ol>{moves}</ol>
-      </div>
+      
     </div>
   );
 }
