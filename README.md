@@ -8,3 +8,5 @@ npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 npm i react-hook-form
 npm i @hookform/resolvers
 npm i yup
+npm i @chakra-ui/icons
+npm i react-icons
