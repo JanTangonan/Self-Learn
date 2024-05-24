@@ -5,6 +5,8 @@ import TicTacToe from './TicTacToe';
 import WithSubnavigation from './NavBar.tsx';
 import SplitScreen from './LandingPage.tsx';
 import SimpleThreeColumns from './Features.tsx';
+import SmallWithLogoLeft from './Footer.tsx';
+import GridBlurredBackdrop from './Testimonials.tsx'
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <WithSubnavigation />
       <SplitScreen />
       <SimpleThreeColumns />
+      <GridBlurredBackdrop />
+      <SmallWithLogoLeft />
       <TicTacToe />
       <Calculator />
       <Array />
