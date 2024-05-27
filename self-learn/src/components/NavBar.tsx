@@ -22,6 +22,8 @@ import {
     ChevronRightIcon,
   } from '@chakra-ui/icons';
 import React from 'react';
+import TicTacToe from './TicTacToe';
+import Calculator from './Calculator';
   
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
@@ -283,11 +285,11 @@ import React from 'react';
       ],
     },
     {
-      label: 'Learn Design',
-      href: '#',
+      label: 'TicTacToe',
+      href: 'TicTacToe.js',
     },
     {
-      label: 'Hire Designers',
-      href: '#',
+      label: 'Calculator',
+      href: 'Calculator',
     },
   ];
