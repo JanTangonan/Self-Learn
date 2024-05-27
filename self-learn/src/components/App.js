@@ -1,7 +1,7 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import { Routes, Route, Navigate} from "react-router-dom";
 import Calculator from './Calculator';
 import Array from './Array';
-import TicTacToe from './TicTacToe';
+import TicTacToe from './TicTacToe.tsx';
 import WithSubnavigation from './NavBar.tsx';
 import SplitScreen from './LandingPage.tsx';
 import SimpleThreeColumns from './Features.tsx';
@@ -11,17 +11,19 @@ import BasicStatistics from './Statistics.tsx';
 
 function App() {
   return (
-    <ChakraProvider>
+    <div className='App'>
       <WithSubnavigation />
       <SplitScreen />
       <BasicStatistics />
       <SimpleThreeColumns />
       <GridBlurredBackdrop />
       <SmallWithLogoLeft />
-      <TicTacToe />
-      <Calculator />
+      {/* <Calculator />
       <Array />
-    </ChakraProvider>
+      <Routes>
+        <Route path="tictactoe" element={<TicTacToe />} />
+      </Routes> */}
+    </div>
   )
 }
 
