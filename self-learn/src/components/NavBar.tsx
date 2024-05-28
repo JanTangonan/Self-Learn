@@ -286,7 +286,7 @@ import Calculator from './Calculator';
     },
     {
       label: 'TicTacToe',
-      href: 'TicTacToe.js',
+      href: '/tictactoe',
     },
     {
       label: 'Calculator',
