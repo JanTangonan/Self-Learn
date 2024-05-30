@@ -10,6 +10,4 @@ npm i @hookform/resolvers
 npm i yup
 npm i @chakra-ui/icons
 npm i react-icons
-npm install @fontsource/open-sans @fontsource/raleway
-npm install @fontsource/work-sans @fontsource/inter
 npm i react-slick
