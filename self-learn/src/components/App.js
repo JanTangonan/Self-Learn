@@ -13,11 +13,22 @@ function App() {
   return (
     <div className='App'>
       <WithSubnavigation />
-      <SplitScreen />
+      <Routes>
+        <Route path="home" element={<SplitScreen />} />
+        <Route path="basicstatistics" element={<BasicStatistics />} />
+        <Route path="simplethreecolumns" element={<SimpleThreeColumns />} />
+        <Route path="gridblurredbackdrop" element={<GridBlurredBackdrop />} />
+        <Route path="smallwithlogoleft" element={<SmallWithLogoLeft />} />
+        <Route path="calculator" element={<Calculator />} />
+        <Route path="array" element={<Array />} />
+        <Route path="tictactoe" element={<TicTacToe />} />
+        <Route path="*" element={<Navigate to="/home" />} />
+      </Routes>
+      {/* <SplitScreen />
       <BasicStatistics />
       <SimpleThreeColumns />
       <GridBlurredBackdrop />
-      <SmallWithLogoLeft />
+      <SmallWithLogoLeft /> */}
       {/* <Calculator />
       <Array />
       <Routes>
