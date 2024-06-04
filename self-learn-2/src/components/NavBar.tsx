@@ -173,10 +173,10 @@ export default function NavBar(){
       <ul className="nav-links">
         <div className="menu">
           <li>
-            <Link to="admin/dashboard">Home</Link>
+            <Link to="home">Home</Link>
           </li>
           <li>
-            <Link to="admin/events-manager">Events</Link>
+            <Link to="calculator">Calculator</Link>
           </li>
           <li>
             <Link to="admin/sports-manager">Sports</Link>

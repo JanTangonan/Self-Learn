@@ -66,6 +66,8 @@ const Calculator: React.FC = () => {
   };
 
   return (
+    <>
+    <div className='break'></div>
     <div className="calculator">
       <div className="display">{displayValue}</div>
       <div className="buttons">
@@ -87,6 +89,8 @@ const Calculator: React.FC = () => {
         <Button onClick={() => handleOperatorClick('+')}>+</Button>
       </div>
     </div>
+    </>
+    
   );
 };
 
