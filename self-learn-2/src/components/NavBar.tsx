@@ -185,7 +185,7 @@ export default function NavBar(){
             <Link to="admin/team-manager">Team</Link>
           </li>
           <li>
-            <Link to="admin/match-manager">Match</Link>
+            <Link to="forms">Form</Link>
           </li>
         </div>
       </ul>
