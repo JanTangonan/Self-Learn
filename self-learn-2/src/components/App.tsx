@@ -4,17 +4,17 @@ import NavBar from './NavBar';
 import TicTacToe from './TicTacToe';
 import Calculator from './Calculator';
 import Statistics from './Statistics';
+import Forms from './Forms';
 
 function App() {
   return (
     <div className='App'>
       <NavBar />
-      <LandingPage />
-      <Statistics />
       <Routes>
         <Route path="home" element={<LandingPage />} />
         <Route path="tictactoe" element={<TicTacToe />} />
         <Route path="calculator" element={<Calculator />} />
+        <Route path="forms" element={<Forms />} />
       </Routes>
     </div>
   );
