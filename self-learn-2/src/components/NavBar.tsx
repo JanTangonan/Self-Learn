@@ -179,7 +179,7 @@ export default function NavBar(){
             <Link to="calculator">Calculator</Link>
           </li>
           <li>
-            <Link to="admin/sports-manager">Sports</Link>
+            <Link to="dashboard">Dash Board</Link>
           </li>
           <li>
             <Link to="admin/team-manager">Team</Link>
