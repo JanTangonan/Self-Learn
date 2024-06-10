@@ -5,6 +5,7 @@ import TicTacToe from './TicTacToe';
 import Calculator from './Calculator';
 import Statistics from './Statistics';
 import Forms from './Forms';
+import DashBoard from './DashBoard';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="tictactoe" element={<TicTacToe />} />
         <Route path="calculator" element={<Calculator />} />
         <Route path="forms" element={<Forms />} />
+        <Route path="dashboard" element={<DashBoard />} />
       </Routes>
     </div>
   );
