@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const MergeSortComponent: React.FC = () => {
+const MergeSort: React.FC = () => {
   const [numbers, setNumbers] = useState<number[]>([5, 3, 8, 4, 2]);
 
   const mergeSort = (arr: number[]): number[] => {
@@ -60,4 +60,4 @@ const MergeSortComponent: React.FC = () => {
   );
 };
 
-export default MergeSortComponent;
+export default MergeSort;
